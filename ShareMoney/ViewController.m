@@ -10,6 +10,7 @@
 
 @interface ViewController () <UIGestureRecognizerDelegate,FSCalendarDataSource,FSCalendarDelegate> {
     void * _KVOContext;
+    NSString * dateString;
 }
 @property (weak, nonatomic) IBOutlet FSCalendar *calendar;
 @property (weak, nonatomic) UIButton *previousButton;
@@ -39,7 +40,7 @@
     
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.locale = chinese;
-    self.dateFormatter.dateFormat = @"yyyy/MM/dd";
+    self.dateFormatter.dateFormat = @"yyyy-MM-dd";
     
     // add button on calendar
     UIButton *previousButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -82,6 +83,12 @@
     // go to today page
     [_calendar setCurrentPage:[NSDate date] animated:NO];
 }
+- (IBAction)addEventBtnPressed:(id)sender {
+    
+    EventViewController * eventViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"EventViewController"];
+    eventViewController.dateString = dateString;
+    [self presentViewController:eventViewController animated:true completion:nil];
+}
 
 #pragma mark - Btn Action Mehtods
 - (void)previousClicked:(id)sender
@@ -98,11 +105,19 @@
     [self.calendar setCurrentPage:nextMonth animated:YES];
 }
 
+#pragma mark - FSCalendarDataSource
+
+- (NSString *)calendar:(FSCalendar *)calendar titleForDate:(NSDate *)date
+{
+    return [self.gregorian isDateInToday:date] ? @"今天" : nil;
+}
+
 #pragma mark - FSCalendarDelegate
 
 - (void)calendar:(FSCalendar *)calendar didSelectDate:(NSDate *)date atMonthPosition:(FSCalendarMonthPosition)monthPosition
 {
-    NSLog(@"did select date %@",[self.dateFormatter stringFromDate:date]);
+    dateString = [self.dateFormatter stringFromDate:date];
+    NSLog(@"did select date %@",dateString);
     if (monthPosition == FSCalendarMonthPositionNext || monthPosition == FSCalendarMonthPositionPrevious) {
         [calendar setCurrentPage:date animated:YES];
     }

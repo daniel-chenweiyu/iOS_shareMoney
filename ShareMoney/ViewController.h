@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FSCalendar.h>
 #import <FSCalendarScopeHandle.h>
+#import "EventViewController.h"
 
 @interface ViewController : UIViewController
 

@@ -1,12 +1,17 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - FSCalendar (2.6.0)
 
 DEPENDENCIES:
+  - FMDB
   - FSCalendar
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   FSCalendar: c00fa5f4c3ec343ee6f7b804ae19322e9898bb84
 
-PODFILE CHECKSUM: a19ddf5b22c6aed3f5fd14568f0d6a7356cf04e6
+PODFILE CHECKSUM: e93afb8f52dd1819f4f0c507e7bacf87a2c7028f
 
 COCOAPODS: 1.2.0

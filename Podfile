@@ -9,5 +9,6 @@ target 'ShareMoney' do
 
   # Pods for ShareMoney
 pod 'FSCalendar'
+pod 'FMDB'
 
 end
