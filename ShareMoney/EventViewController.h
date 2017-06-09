@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DatabaseManager.h"
+
+#define NSNOTIFICATIONCENTER_RELOAD_TABLE_VIEW @"reloadData"
+
 
 @interface EventViewController : UIViewController
 @property (nonatomic,strong) NSString * dateString;

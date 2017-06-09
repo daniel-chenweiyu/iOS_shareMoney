@@ -10,6 +10,7 @@
 #import <FSCalendar.h>
 #import <FSCalendarScopeHandle.h>
 #import "EventViewController.h"
+#import "DatabaseManager.h"
 
 @interface ViewController : UIViewController
 

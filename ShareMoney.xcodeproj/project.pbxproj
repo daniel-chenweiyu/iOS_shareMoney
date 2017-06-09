@@ -15,6 +15,7 @@
 		651DC85B1E53059800A9BED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651DC8591E53059800A9BED3 /* LaunchScreen.storyboard */; };
 		651DC9111E5B143E00A9BED3 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DC9101E5B143E00A9BED3 /* EventViewController.m */; };
 		651DC9141E5B272E00A9BED3 /* AddCostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DC9131E5B272E00A9BED3 /* AddCostTableViewCell.m */; };
+		651DC9D31E71494900A9BED3 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DC9D21E71494900A9BED3 /* DatabaseManager.m */; };
 		A97F6B19BA639DC3AC11CE8B /* libPods-ShareMoney.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C851F349258736D825C810 /* libPods-ShareMoney.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		651DC9101E5B143E00A9BED3 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
 		651DC9121E5B272E00A9BED3 /* AddCostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCostTableViewCell.h; sourceTree = "<group>"; };
 		651DC9131E5B272E00A9BED3 /* AddCostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCostTableViewCell.m; sourceTree = "<group>"; };
+		651DC9D11E71494900A9BED3 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		651DC9D21E71494900A9BED3 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
 		833D80A5B792F30B150D29F4 /* Pods-ShareMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareMoney/Pods-ShareMoney.release.xcconfig"; sourceTree = "<group>"; };
 		DE0A84367A25A0A25C9A418B /* Pods-ShareMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareMoney/Pods-ShareMoney.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +83,8 @@
 				651DC9131E5B272E00A9BED3 /* AddCostTableViewCell.m */,
 				651DC90F1E5B143E00A9BED3 /* EventViewController.h */,
 				651DC9101E5B143E00A9BED3 /* EventViewController.m */,
+				651DC9D11E71494900A9BED3 /* DatabaseManager.h */,
+				651DC9D21E71494900A9BED3 /* DatabaseManager.m */,
 				651DC8571E53059800A9BED3 /* Assets.xcassets */,
 				651DC8591E53059800A9BED3 /* LaunchScreen.storyboard */,
 				651DC85C1E53059800A9BED3 /* Info.plist */,
@@ -240,6 +245,7 @@
 				651DC9141E5B272E00A9BED3 /* AddCostTableViewCell.m in Sources */,
 				651DC9111E5B143E00A9BED3 /* EventViewController.m in Sources */,
 				651DC8501E53059800A9BED3 /* AppDelegate.m in Sources */,
+				651DC9D31E71494900A9BED3 /* DatabaseManager.m in Sources */,
 				651DC84D1E53059800A9BED3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
